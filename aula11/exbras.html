@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Em qual pais voce mora?</h1>
+    <input type="text" name="txtpais" id="txtpais"> <input type="button" value="Enviar" onclick="vive()">
+    <div class="res"></div>
+
+    <script>
+        function vive(){
+            var pais = window.document.querySelector('input#txtpais')
+            var pa = String(pais.value)
+            var res = window.document.querySelector('div.res')
+            
+            if (pa == 'Brasil'){
+                res.innerHTML = `Vivendo no Brasil voce e Brasileiro`
+            }
+            else{
+                res.innerHTML = `Vivendo no ${pa} voce e Estrangeiro`
+            }
+
+        }
+         
+
+    </script>
+</body>
+</html>
