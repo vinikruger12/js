@@ -2,7 +2,7 @@ var hora = new Date()
 var horario = hora.getHours()
 var texto = window.document.querySelector('div.hora')
 
-var horario = 13
+
 
 texto.innerHTML = `Agora sao ${horario} horas`
 
